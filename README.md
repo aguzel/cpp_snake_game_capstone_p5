@@ -1,6 +1,6 @@
 # Udacity C++ Nanodegree
 
-## `Project: Capstone Snake Game Clone`
+## `Project: Capstone Snake Game with Diffuculty Level Setting / Operating System Detector 
 
 # Overview
 
