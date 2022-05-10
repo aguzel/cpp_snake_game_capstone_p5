@@ -4,7 +4,7 @@
 
 # Overview
 
-This C++ project is the capstone project (final) of the Udacity C++ Nanodegree.
+This C++ project is the capstone project of the Udacity C++ Nanodegree.
 The source code has been mostly adapted from the provided starter code located at (Udacity's repo)[https://github.com/udacity/CppND-Capstone-Snake-Game].
 The code base can be divided architecturally and functionally into four distinct class-based components:
 
@@ -20,13 +20,14 @@ Once the game starts and creates the `Game`, `Controller`, and `Snake` objects, 
 
 Upon lauching the game, the user is first greeted with the detected system platform.
 
-The user is then asked for the starting game diffuculty level which reflects the speed of the `snake`
+![platform](imgs/platform.png)
 
-![platform](imgs/snakeIntro.png)
+The user is then asked for the starting speed of the `snake`
+
+![startingSpeed](imgs/selectSpeed.png)
 
 The game board launches after the user provides a valid speed and the user is able to play the game by moving the snake around with the arrow keys.
-
-![gameBoartd](imgs/snakeScreen.png)
+![gameBoartd](imgs/gameBoard.png)
 
 ## Dependencies for Running Locally
 
@@ -91,4 +92,4 @@ The [C++ Guide by Google](https://google.github.io/styleguide/cppguide.html#Func
 
 > The project accepts input from a user as part of the necessary operation of the program.
 
-The user has the option to select the difficulty level of the snake game which relates the speed of snake. A Game class member function `UpdateStartSpeed` (main.cpp line 23) is called and this member function encapsulates the Game's private data member `snake` and calls the Snake class member function `SetStartingSpeed` (game.cpp line 61). As this point, according to the function declaration comments (`snake.h` line 25), the function `SetStartingSpeed` first asks the user for a starting diffuculty level and relates the level within an acceptable, pre-defined range in between `minStartLevel` and `maxStartLevel` variables. The function then proceeds to validate the user's input and assign it to the Snake's private member `speed`.
+The user has the option to select the starting speed of the snake. A Game class member function `UpdateStartSpeed` (main.cpp line 23) is called and this member function encapsulates the Game's private data member `snake` and calls the Snake class member function `SetStartingSpeed` (game.cpp line 61). As this point, according to the function declaration comments (`snake.h` line 25), the function `SetStartingSpeed` first asks the user for a starting speed within an acceptable, pre-defined range. The function then proceeds to validate the user's input and assign it to the Snake's private member `speed`.

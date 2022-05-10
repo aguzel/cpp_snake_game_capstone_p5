@@ -23,7 +23,7 @@ public:
 
   void Update();
   /* 
-  First ask the user for a starting speed of the snake.
+  First ask the user for a starting diffuculty level and reflects to speed of the snake.
   Validate user's input and save the speed.
   */
   void SetStartingSpeed();
@@ -46,8 +46,8 @@ private:
   bool growing{false};
   int grid_width;
   int grid_height;
-  float minStartSpeed{1};
-  float maxStartSpeed{3};
+  float minStartLevel{1};
+  float maxStartLevel{3};
 };
 
 #endif

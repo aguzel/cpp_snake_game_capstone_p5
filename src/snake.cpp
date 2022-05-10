@@ -4,11 +4,10 @@
 
 void Snake::SetStartingSpeed()
 {
-  float userSpeed;
+  int userLevel;
   char rangeBuffer[25];
   char userAnswer[25];
-  //sprintf(rangeBuffer, "%0.1f and %0.1f", minStartSpeed, maxStartSpeed);
-  //std::string rangeStr(rangeBuffer);
+
 
   std::cout << "Select the Level (by typing 1 or 2 or 3)" << "\n";
   std::cout << "1-Easy, 2-Normal, 3-Hard" << "\n";
@@ -17,12 +16,12 @@ void Snake::SetStartingSpeed()
 
   while (true)
   {
-    int isNum = scanf("%f", &userSpeed);
+    int isNum = scanf("%i", &userLevel);
     if (isNum)
     {
-      if (userSpeed >= minStartSpeed && userSpeed <= maxStartSpeed)
+      if (userLevel >= minStartLevel && userLevel <= maxStartLevel)
       {
-        speed = userSpeed*0.1;
+        speed = userLevel*0.1;
         return;
       }
     }
