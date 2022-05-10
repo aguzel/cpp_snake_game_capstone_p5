@@ -7,11 +7,11 @@ void Snake::SetStartingSpeed()
   float userSpeed;
   char rangeBuffer[25];
   char userAnswer[25];
-  sprintf(rangeBuffer, "%0.1f and %0.1f", minStartSpeed, maxStartSpeed);
-  std::string rangeStr(rangeBuffer);
+  //sprintf(rangeBuffer, "%0.1f and %0.1f", minStartSpeed, maxStartSpeed);
+  //std::string rangeStr(rangeBuffer);
 
-  std::cout << "Select the Level (by typing 1 or 2 or 3)" << std::endl;
-  std::cout << "1-Easy, 2-Normal, 3-Hard\n" << rangeStr << std::endl;
+  std::cout << "Select the Level (by typing 1 or 2 or 3)" << "\n";
+  std::cout << "1-Easy, 2-Normal, 3-Hard" << "\n";
   
 
 
@@ -26,7 +26,7 @@ void Snake::SetStartingSpeed()
         return;
       }
     }
-    std::cerr << "\n\n\n Please provide a valid Level Selection Number " << rangeStr << std::endl;
+    std::cerr << "\n\n\n Please provide a valid Level Number (1/2/3) " << "\n";
   };
 }
 

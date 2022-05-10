@@ -35,9 +35,9 @@ std::string MetaGame::getPlatform()
 void MetaGame::printPlatform()
 {
     if (platformUsed != "")
-        std::cout << "Platform Detected: " << platformUsed << std::endl;
+        std::cout << "Platform Detected: " << platformUsed << "\n";
     else
-        std::cout << "No System Platform Detected." << std::endl;
+        std::cout << "No System Platform Detected." << "\n";
 }
 
 #endif
