@@ -20,14 +20,14 @@ Once the game starts and creates the `Game`, `Controller`, and `Snake` objects, 
 
 Upon lauching the game, the user is first greeted with the detected system platform.
 
-![platform](imgs/platform.png)
-
 The user is then asked for the starting game diffuculty level which reflects the speed of the `snake`
 
-![startingSpeed](imgs/selectSpeed.png)
+![platform](imgs/snakeIntro.png)
+
+
 
 The game board launches after the user provides a valid speed and the user is able to play the game by moving the snake around with the arrow keys.
-![gameBoartd](imgs/gameBoard.png)
+![gameBoartd](imgs/snakeScreen.png)
 
 ## Dependencies for Running Locally
 
